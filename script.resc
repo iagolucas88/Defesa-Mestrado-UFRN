@@ -1,0 +1,9 @@
+using sysbus
+mach create
+machine LoadPlatformDescription @platforms/cpus/host-64.repl
+
+# Load the executable
+sysbus LoadELF /Documents/Defesa Mestrado/ECDSA_ECDH_C25519
+
+# Start the simulation
+start
