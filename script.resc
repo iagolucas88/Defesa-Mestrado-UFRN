@@ -1,9 +1,12 @@
 using sysbus
 mach create
-machine LoadPlatformDescription @platforms/cpus/host-64.repl
+machine LoadPlatformDescription @/opt/renode/platforms/cpus/cortex-a9.repl
+
+# Mapear a memória RAM manualmente
+sysbus Memory @0x00000000 size 0x10000000
 
 # Load the executable
-sysbus LoadELF /Documents/Defesa Mestrado/ECDSA_ECDH_C25519
+sysbus LoadELF @/home/iagolucas/Documents/Defesa_Mestrado/ECDSA_ECDH_C25519_32bits
 
 # Start the simulation
 start
