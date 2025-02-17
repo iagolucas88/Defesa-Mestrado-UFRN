@@ -1,0 +1,1 @@
+arm-none-eabi-g++  -mcpu=cortex-m4 -mthumb -O2 CMakeFiles/ECDSA_ECDH_C25519.dir/ECDSA_ECDH_C25519.cpp.o CMakeFiles/ECDSA_ECDH_C25519.dir/syscalls.c.o -o ECDSA_ECDH_C25519   -L/usr/local/arm-gmp/lib  -Wl,-rpath,/usr/local/arm-gmp/lib -lgmp 

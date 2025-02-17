@@ -1,0 +1,15 @@
+using sysbus
+mach create "STM32F4Discovery"
+machine LoadPlatformDescription @platforms/cpus/stm32f4.repl
+
+// Carregar o arquivo .elf
+sysbus LoadELF @/home/Documents/Defesa_Mestrado/Defesa_Mestrado_mini/ECDSA_ECDH_C25519.elf
+
+// Configurar o ponto de entrada (opcional)
+cpu0 VectorTableOffset `sysbus GetSymbolAddress "_start"`
+
+// Configurar a UART para saída de logs (opcional)
+showAnalyzer uart1
+
+// Iniciar a simulação
+start

@@ -4,7 +4,9 @@ g++ -I /usr/local/include -L /usr/local/lib -L /lib ECC_Digital_Signature.cpp -o
 
 g++ -I /usr/local/include -L /usr/local/lib -L /lib ECC_comparacao.cpp -o ECC_comparacao -lntl -lgmp
 
+g++ -m32 -I /usr/local/include -L /usr/local/lib -L /lib ECDSA_ECDH_C25519.CPP -o ECDSA_ECDH_C25519_32bits -lgmp
 
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O2 -I /usr/local/include -L /usr/local/lib -L /lib -o ECDSA_ECDH_C25519.elf ECDSA_ECDH_C25519.cpp -lgmp
 
 
 Specifics integers rand numbers bit sizes

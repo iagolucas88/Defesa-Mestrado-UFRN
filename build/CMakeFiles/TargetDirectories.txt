@@ -1,0 +1,3 @@
+/home/iagolucas/Documents/Defesa_Mestrado/build/CMakeFiles/ECDSA_ECDH_C25519.dir
+/home/iagolucas/Documents/Defesa_Mestrado/build/CMakeFiles/edit_cache.dir
+/home/iagolucas/Documents/Defesa_Mestrado/build/CMakeFiles/rebuild_cache.dir
